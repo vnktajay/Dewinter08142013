@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="Brightness_Contrast.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Brightness_Contrast"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Image x:Name="img" HorizontalAlignment="Left" Height="441" Margin="32,111,0,0" VerticalAlignment="Top" Width="385"/>
+        <Slider x:Name="sldr" HorizontalAlignment="Left" Margin="944,176,0,0" VerticalAlignment="Top" Width="288" Value="{Binding ElementName=txtbox,Path=Text,Mode=TwoWay}" />
+        <Button Content="Show" HorizontalAlignment="Left" Margin="338,668,0,0" VerticalAlignment="Top" Width="161" Click="Button_Click"/>
+        <TextBox x:Name="txtbox" HorizontalAlignment="Left" Margin="853,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49" TextChanged="txtbox_TextChanged" />
+        <Image x:Name="img1" HorizontalAlignment="Left" Height="441" Margin="434,111,0,0" VerticalAlignment="Top" Width="400"/>
+        <TextBox x:Name="txtbox1" HorizontalAlignment="Left" Margin="853,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="txtbox1_TextChanged"/>
+        <Slider x:Name="sldr1" HorizontalAlignment="Left" Margin="944,111,0,0" VerticalAlignment="Top" Width="288" Value="{Binding ElementName=txtbox1,Path=Text, Mode=TwoWay}"/>
+        <Slider x:Name="sldr3" HorizontalAlignment="Left" Margin="944,241,0,0" VerticalAlignment="Top" Width="288" Value="{Binding Text, ElementName=txtbox3, Mode=TwoWay}"/>
+        <Slider x:Name="sldr4" HorizontalAlignment="Left" Margin="944,306,0,0" VerticalAlignment="Top" Width="288" Value="{Binding Text, ElementName=txtbox4, Mode=TwoWay}"/>
+        <Slider x:Name="sldr5" HorizontalAlignment="Left" Margin="944,371,0,0" VerticalAlignment="Top" Width="288" Value="{Binding Text, ElementName=txtbox5, Mode=TwoWay}"/>
+        <Slider x:Name="sldr6" HorizontalAlignment="Left" Margin="944,436,0,0" VerticalAlignment="Top" Width="288" Value="{Binding Text, ElementName=txtbox6, Mode=TwoWay}"/>
+        <TextBox x:Name="txtbox3" HorizontalAlignment="Left" Margin="853,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="txtbox3_TextChanged"/>
+        <TextBox x:Name="txtbox4" HorizontalAlignment="Left" Margin="853,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="txtbox4_TextChanged"/>
+        <TextBox x:Name="txtbox5" HorizontalAlignment="Left" Margin="853,385,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="txtbox5_TextChanged" />
+        <TextBox x:Name="txtbox6" HorizontalAlignment="Left" Margin="853,449,0,0" TextWrapping="Wrap" VerticalAlignment="Top" TextChanged="txtbox6_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="972,86,0,0" TextWrapping="Wrap" Text="Contrast:" VerticalAlignment="Top" Height="25" Width="233" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="972,151,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="233">
+        	<Run FontSize="20" FontFamily="Segoe UI, Tahoma, Arial, Arial Unicode MS, Microsoft Sans Serif, Lucida Sans Unicode" Text="Brightness:"/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="972,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="233">
+        	<Run FontSize="20" FontFamily="Segoe UI, Tahoma, Arial, Arial Unicode MS, Microsoft Sans Serif, Lucida Sans Unicode" Text="Saturation:"/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="972,281,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="233">
+        	<Run FontSize="20" FontFamily="Segoe UI, Tahoma, Arial, Arial Unicode MS, Microsoft Sans Serif, Lucida Sans Unicode" Text="Sharpness:"/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="972,346,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="233">
+        	<Run FontSize="20" FontFamily="Segoe UI, Tahoma, Arial, Arial Unicode MS, Microsoft Sans Serif, Lucida Sans Unicode" Text="Gamma:"/>
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="972,411,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="233">
+        	<Run FontSize="20" FontFamily="Segoe UI, Tahoma, Arial, Arial Unicode MS, Microsoft Sans Serif, Lucida Sans Unicode" Text="Hue:"/>
+        </TextBlock>
+
+    </Grid>
+</Page>
